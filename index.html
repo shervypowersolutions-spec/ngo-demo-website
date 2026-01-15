@@ -1,13 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Indian Foundation Trust</title>
+
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: #0b5ed7;
+            color: #fff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            height: 70vh;
+            background: linear-gradient(
+                rgba(0,0,0,0.6),
+                rgba(0,0,0,0.6)
+            ),
+            url("https://images.unsplash.com/photo-1523580846011-d3a5bc25702b");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #0b5ed7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #fff;
+        }
+
+        .btn-outline:hover {
+            background: #fff;
+            color: #0b5ed7;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        section.gray {
+            background: #f5f5f5;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* ===== PROGRAMS ===== */
+        .programs {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .program {
+            background: #fff;
+            padding: 30px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        }
+
+        .program h3 {
+            color: #0b5ed7;
+            margin-bottom: 10px;
+        }
+
+        /* ===== CONTACT ===== */
+        .contact p {
+            margin: 8px 0;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <div class="container">
+        <div class="logo">Unique Indian Foundation Trust</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#programs">Our Work</a>
+            <a href="#donate">Donate</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ===== HERO ===== -->
 <section class="hero" id="home">
-    <div class="hero-content">
-        <h2>Serving Humanity With Compassion</h2>
+    <div>
+        <h1>Serving Humanity With Purpose</h1>
         <p>
-            We are committed to improving lives through education, healthcare,
-            and women empowerment initiatives.
+            Unique Indian Foundation Trust is dedicated to uplifting communities
+            through education, healthcare, and social empowerment initiatives.
         </p>
-        <div class="hero-buttons">
-            <a href="#donate" class="btn">Donate Now</a>
-            <a href="#work" class="btn btn-outline">Our Work</a>
+        <a href="#donate" class="btn">Donate Now</a>
+        <a href="#programs" class="btn btn-outline">Our Work</a>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Unique Indian Foundation Trust is a non-profit organization working at
+        the grassroots level to create meaningful and sustainable social impact.
+        We believe in equality, dignity, and opportunity for every individual.
+    </p>
+</section>
+
+<!-- ===== PROGRAMS ===== -->
+<section class="gray" id="programs">
+    <h2>Our Key Programs</h2>
+    <p>
+        We focus on long-term solutions that bring real change to society.
+    </p>
+
+    <div class="programs">
+        <div class="program">
+            <h3>Education Support</h3>
+            <p>
+                Providing access to education, learning materials, and digital
+                resources for children in need.
+            </p>
+        </div>
+
+        <div class="program">
+            <h3>Healthcare Initiatives</h3>
+            <p>
+                Organizing health camps, awareness programs, and basic medical
+                support in underserved areas.
+            </p>
+        </div>
+
+        <div class="program">
+            <h3>Women Empowerment</h3>
+            <p>
+                Skill development and livelihood programs to empower women and
+                promote self-reliance.
+            </p>
         </div>
     </div>
 </section>
+
+<!-- ===== DONATE ===== -->
+<section id="donate">
+    <h2>Support Our Cause</h2>
+    <p>
+        Your contribution helps us continue our mission and reach more lives.
+    </p>
+    <a href="#" class="btn">Donate ₹500</a>
+    <a href="#" class="btn">Donate ₹1,000</a>
+    <p style="margin-top:15px; font-size:14px;">
+        * Online donation will be enabled after final approval.
+    </p>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="gray contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@uniqueindianfoundation.org</p>
+    <p>Phone: +91-9XXXXXXXXX</p>
+    <p>Address: India</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2026 Unique Indian Foundation Trust | Demo Website for Design Preview</p>
+</footer>
+
+</body>
+</html>
